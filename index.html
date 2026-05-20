@@ -6,29 +6,33 @@
     <title>Equipo: Las cabras</title>
     <style>
         body {
-            background-color: lightskyblue;
+            background: linear-gradient(to right, lightblue, plum);
             padding: auto;
         }
 
-        .Nombre-Equipo {
+        .Equipo {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .Nombre-Equipo h1{
+        .Equipo h1 {
             color: purple;
-            display: flex;
-            justify-content: center;
         }
 
-        .Nombre-Equipo span {
+        .Equipo span {
             color: orangered;
-            display: flex;
-            justify-content: center;
+        }
+
+        img {
+            width: 500px;
+            height: 300px;
         }
 
         .Integrantes {
-            border: solid black 3px;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
             font-size: 30px;
@@ -36,15 +40,47 @@
             justify-content: center;
         }
 
+        .Integrantes ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .Integrantes li {
+            margin: 10px 0;
+            color: darkblue;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table thead {
+            background-color: lightgray;
+        }
+
+        .Tabla h2 {
+            text-align: center;
+            color: darkred;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
     <section>
-        <div class="Nombre-Equipo">
+        <div class="Equipo">
             <h1>Equipo: <span>Las Cabras</span></h1>
             <img src="Cabras.jpg" alt="">
-        </div>
 
+        </div>
 
         <div class="Integrantes">
             <ul>
@@ -53,6 +89,46 @@
                 <li>Sergio Ethan Corona Hernandez</li>
                 <li>Diego Sebastian Nuñez Chavez</li>
             </ul>
+        </div>
+
+        <div class="Tabla">
+            <h2>Tabla con datos de estudiante</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>MATRICULA INTEGRANTE</th>
+                        <th>SEXO</th>
+                        <th>EDAD</th>
+                        <th>Enlace a Matricula</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>20253DS007</td>
+                        <td>Masculino</td>
+                        <td>19 años</td>
+                        <td><a href="">Ver Perfil</a></td>
+                    </tr>
+                    <tr>
+                        <td>20253DS015</td>
+                        <td>Masculino</td>
+                        <td>20 años</td>
+                        <td><a href="integrantes/20253ds015.html">Ver Perfil</a></td>
+                    </tr>
+                    <tr>
+                        <td>20253ds026</td>
+                        <td>Masculino</td>
+                        <td>18 años</td>
+                        <td><a href="integrantes/20253ds026.html">Ver Perfil</a></td>
+                    </tr>
+                    <tr>
+                        <td>20253DS009</td>
+                        <td>Masculino</td>
+                        <td>18 años</td>
+                        <td><a href="integrantes/20253ds009.html">Ver Perfil</a></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         
     </section>
